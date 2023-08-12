@@ -32,6 +32,7 @@ function onSubmit(event) {
     createPromise(i, delay).then(onSuccess).catch(onError);
     delay += step;
   }
+  form.reset();
 }
 
 //замість стандартного alert

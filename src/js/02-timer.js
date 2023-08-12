@@ -59,7 +59,7 @@ function updateTimerFace({ days, hours, minutes, seconds }) {
 function onClick() {
   const selectedDate = fp.selectedDates[0];
 
-  timerId = setInterval(() => {
+  const timerId = setInterval(() => {
     const startTime = new Date();
     const countdown = selectedDate - startTime;
     refs.btnTimerStart.disabled = true;
